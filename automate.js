@@ -3,7 +3,7 @@ const fs = require('fs');
 const csv = require('csv-parser');
 
 // WhatsApp Group Invite Link
-const csGroupLink = "https://chat.whatsapp.com/Hia0LB7jQoT2aQByT2eQED"; 
+const csGroupLink = "https://chat.whatsapp.com/XXXXXXX"; 
 const engGroupLink = 'https://chat.whatsapp.com/YYYYYY'; // Engineering group link
 
 // Start the client
@@ -25,7 +25,7 @@ async function sendGroupLinkToUsers(client) {
 
         try {
             const formattedPhone = `${phoneNumber}@c.us`; // Format phone number with WhatsApp suffix
-            const message = `Hello Chalana, join our WhatsApp group using the link below:\n${groupLink}`;
+            const message = `Hello, join our WhatsApp group using the link below:\n${groupLink}`;
             
             // Send the invite link to the user
             await client.sendText(formattedPhone, message);
